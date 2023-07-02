@@ -1,0 +1,10 @@
+onnxruntime==1.12.0
+streamlit==1.18.1
+mediapipe==0.9.0.1
+av==10.0.0
+numpy==1.21.6
+pygame==2.1.0
+opencv_python==4.7.0.72
+onnx==1.12.0
+Pillow==10.0.0
+streamlit_webrtc==0.45.1
