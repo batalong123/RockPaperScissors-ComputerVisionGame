@@ -12,7 +12,7 @@ class ComputerVisionGame(VideoProcessorBase):
 	def __init__(self):
 		super(ComputerVisionGame, self).__init__()
 
-		sound_path = 'sound/cam.mp3'
+		sound_path = 'sound/sweep.wav'
 		pygame.init()
 		pygame.mixer.init()
 		pygame.mixer.music.load(sound_path)
