@@ -12,9 +12,10 @@ class ComputerVisionGame(VideoProcessorBase):
 	def __init__(self):
 		super(ComputerVisionGame, self).__init__()
 
+		sound_path = 'sound/'
 		pygame.init()
 		pygame.mixer.init()
-		pygame.mixer.music.load('sound/cam.mp3')
+		pygame.mixer.music.load(os.path.join(sund_path, 'cam.mp3'))
 
 		fps = 30.0
 		self.FPS = fps//3
