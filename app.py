@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 from module.contact import contact_me
 from module.greetings import welcome
-from module.rps_game import *
+from module.rps_game import ComputerVisionGame
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 
 
