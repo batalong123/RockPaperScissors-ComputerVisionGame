@@ -1,5 +1,5 @@
-from module.visions import *
-from module.game_utils import *
+from module.visions import (board, gestures_recognizer, annotate, start_game,end_game,textMenu)
+from module.game_utils import GameBoard
 import cv2, pygame
 import av
 import streamlit as st
@@ -102,7 +102,7 @@ class ComputerVisionGame(VideoProcessorBase):
 			
 		else:
 			if self.game_state == "start":
-				img = start_game(img)
+				img = start_game(img) 
 
 			if self.game_state == "game_over":
 				img = end_game(img)
