@@ -1,7 +1,7 @@
 from module.visions import (board, gestures_recognizer, annotate, start_game,end_game,textMenu)
 from module.game_utils import GameBoard
 import cv2, pygame
-import av
+import av, os
 import streamlit as st
 from streamlit_webrtc import VideoProcessorBase
 from av.video.frame import VideoFrame
