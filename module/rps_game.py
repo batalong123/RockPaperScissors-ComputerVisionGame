@@ -13,9 +13,9 @@ class ComputerVisionGame(VideoProcessorBase):
 		super(ComputerVisionGame, self).__init__()
 
 		sound_path = 'sound/sweep.wav'
-		pygame.init()
-		pygame.mixer.init()
-		pygame.mixer.music.load(sound_path)
+		#pygame.init()
+		#pygame.mixer.init()
+		#pygame.mixer.music.load(sound_path)
 
 		fps = 30.0
 		self.FPS = fps//3
@@ -58,7 +58,7 @@ class ComputerVisionGame(VideoProcessorBase):
 
 				#update 
 				if bot_choice:
-					pygame.mixer.music.play()
+					#pygame.mixer.music.play()
 					img = annotate(img, [self.img_filenames[sign], self.img_filenames[bot_choice]])
 					self.human_hand = sign
 					self.bot_hand = bot_choice
