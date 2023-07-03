@@ -31,7 +31,7 @@ if page_name == "Play vision game":
 	st.title('RPS game')
 	st.write('Computer vision')
 	ctx = webrtc_streamer(key='OpenCV_WebRTC', mode=WebRtcMode.SENDRECV, 
-		rtc_configuration=RTC_CONFIGURATION,
+		#rtc_configuration=RTC_CONFIGURATION,
 		media_stream_constraints = {'video':True, "audio":False},
 		video_processor_factory=ComputerVisionGame, async_processing=True)
 	if ctx.video_transformer:
